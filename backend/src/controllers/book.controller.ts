@@ -2,13 +2,12 @@ import { Handler, Request, Response } from "express";
 import { getRepository, Repository } from "typeorm";
 
 import { Book } from "../entitys/Book";
-import Checks, {IChecks} from '../helpers/checks'
-class BookController{
+import Checks, { IChecks } from "../helpers/checks";
+class BookController {
+  _checks: IChecks;
 
-  _checks: IChecks
-
-  constructor(){
-    this._checks = new Checks
+  constructor() {
+    this._checks = new Checks();
   }
 
   public getBooks: Handler = async (
@@ -29,15 +28,20 @@ class BookController{
   ): Promise<Response> => {
     try {
       const { name, description, author, color } = req.body;
-      const campsCheckeds = this._checks.camps(name, description, author, color)
+      const campsCheckeds = this._checks.camps(
+        name,
+        description,
+        author,
+        color
+      );
 
-      if(campsCheckeds){
+      if (campsCheckeds) {
         return res.status(400).json({
           succes: false,
-          message: 'Please send all camps'
-        })
+          message: "Please send all camps",
+        });
       }
-      
+
       const bookRepository: Repository<Book> = getRepository(Book);
       const book = new Book();
       book.name = name;
