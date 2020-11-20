@@ -13,7 +13,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npx prettier --write src/* && npx eslint --fix src/*"
+      "pre-commit": "npx prettier --write backend/src/*"
     }
   }
 }
