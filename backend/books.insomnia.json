@@ -1,0 +1,12 @@
+{
+    "name": "test",
+    "description": "a simple book for test",
+    "author": "User Test",
+    "color": "red"
+},
+{
+    "name": "test2",
+    "description": "a simple book for test2",
+    "author": "User Test2",
+    "color": "blue"
+}
