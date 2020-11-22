@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Message({msg}) {
-    return (
-        <div>
-            <div className="alert alert-dismissible alert-success">
-                <h5>{msg}</h5>
-            </div>
-        </div>
-    )
+function Message({ msg }) {
+  return (
+    <div>
+      <div className="alert alert-dismissible alert-success">
+        <h5>{msg}</h5>
+      </div>
+    </div>
+  );
 }
 
-export default Message
+export default Message;
