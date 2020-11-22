@@ -1,6 +1,6 @@
 # BOOK-APP TYPEORM-REACT
 
-#### This is simple app where you can save your books and eliminated. This app was created with typescript, react, node, typeORM, express and postgreSQL(i was used ElepanthSQL for the host of my postgreSQL databse in the cloud).
+#### This is simple app where you can save your books and eliminated. This app was created with typescript, react, node, typeORM, express and postgreSQL(i was used ElepanthSQL for the host of my postgreSQL database in the cloud).
 
 I used React/Javascript for the front-end and Node/Typescript for the back-end.
 
