@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
-
+import {Link} from 'react-router-dom'
 function Home() {
     return (
         <Fragment>
             <div className="jumbotron">
-                <h1 className="display-4">Home</h1>
-                <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <h1 className="display-4">BOOK APP</h1>
+                <p className="lead">This is simple app where you can save your books and eliminated. This app was created with typescript, react, node, typeORM, express and postgreSQL(i was used ElepanthSQL for the host of my postgreSQL databse in the cloud).</p>
                 <hr className="my-4"></hr>
-                <p>It uses utility class for typography and spacing to space content out within the larger container.</p>
+                <p>This app was created by Luca Becci for more information go to <Link className='lead' to='/creator'>Creator</Link> page.</p>
             </div>
         </Fragment>
     )
